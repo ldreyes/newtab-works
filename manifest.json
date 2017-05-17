@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "newtab-works",
+  "description": "Open new tabs to view job descriptions from Waterloo works",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title" : "newtab-works"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
