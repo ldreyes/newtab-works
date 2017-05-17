@@ -5,6 +5,12 @@
   "description": "Open new tabs to view job descriptions from Waterloo works",
   "version": "1.0",
 
+  "content_scripts": [
+    {
+      "matches": ["https://waterlooworks.uwaterloo.ca/myAccount/co-op/coop-postings.htm"],
+      "js": ["lib/jquery-1.11.3.min.js", "index.js"]
+    }
+  ],
   "browser_action": {
     "default_popup": "index.html",
     "default_title" : "newtab-works"
